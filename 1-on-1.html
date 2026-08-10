@@ -37,6 +37,21 @@
     .feature-list li { margin-bottom: 1.25rem; }
     .feature-icon { margin-right: .5rem; }
 
+    .image-row {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .image-card img {
+      width: min(100%, 420px);
+      height: 240px;
+      object-fit: cover;
+      border-radius: .75rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
     header {
       background: var(--surface) !important;
       border-color: var(--border) !important;
@@ -118,6 +133,13 @@
 
   <main class="page">
     <h1 class="section-title">Why You Should Do 1-on-1 Tutoring</h1>
+
+    <div class="image-row">
+      <div class="image-card">
+        <img src="assets/front.jpg" alt="Front view of the tutoring space">
+      </div>
+    </div>
+
     <p>As someone deeply committed to personalized learning, I’ve found that 1-on-1 tutoring offers a level of depth, responsiveness, and emotional safety that group settings often struggle to match. While group tutoring can foster collaboration and shared learning, it rarely allows for the kind of real-time diagnostic work and tailored personalization that I believe are essential for meaningful progress.</p>
 
     <h2 class="subhead">🎯 Precision Over Generalization</h2>
@@ -143,6 +165,7 @@
       <li>developing clarity in writing and communication</li>
       <li>learning how to check AI’s work instead of blindly trusting it</li>
     </ul>
+
     <p>AI can support learning, but it can’t build a student’s mind. That’s where personalized tutoring still matters.</p>
   </main>
 
