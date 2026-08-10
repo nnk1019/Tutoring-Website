@@ -83,6 +83,21 @@
       border-color: var(--accent);
       color: var(--accent);
     }
+
+    .profile-photo {
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      display: block;
+      margin: 0 auto 1.5rem;
+    }
+
+    body.dark .profile-photo {
+      border-color: rgba(255, 255, 255, 0.12);
+    }
   </style>
 </head>
 <body>
@@ -108,6 +123,8 @@
 
   <main class="content" id="top">
     <h1 class="section-title mb-3">About Me</h1>
+
+    <img src="assets/me2024.jpg" alt="Nick" class="profile-photo">
 
     <p>Hi, I'm Nick and I've been tutoring students for over five years, starting in academies during high school and college, and continuing with personalized one-on-one sessions in recent years. I believe tutoring should go beyond grades. My approach is rooted in clarity, patience, and meeting each student exactly where they are. Whether it's helping a 5th grader organize their agenda or guiding a 9th grader through a tough concept, I adapt my strategies to match how that individual learns best.</p>
 
