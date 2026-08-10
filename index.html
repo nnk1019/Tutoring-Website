@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guided Tutoring with Nick</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --surface: #ffffff;
+      --border: #e5e7eb;
+      --muted: #6b7280;
+      --accent: #0d6efd;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    body.dark {
+      --bg: #111827;
+      --text: #f9fafb;
+      --surface: #1f2937;
+      --border: #374151;
+      --muted: #d1d5db;
+      --accent: #60a5fa;
+    }
+
+    .content { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+    .section-title { font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+    .feature-list { list-style: none; padding-left: 0; }
+    .feature-list li::before { content: '✔'; margin-right: .75rem; color: var(--accent); }
+    .simple-list { list-style: none; padding-left: 0; }
+    .simple-list li { margin-bottom: 0.5rem; }
+    .contact-line { margin-bottom: .25rem; }
+
+    header {
+      background: var(--surface) !important;
+      border-color: var(--border) !important;
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    .brand-subtitle {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .brand-title {
+      color: var(--text);
+    }
+
+    nav a {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    body.dark header {
+      box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    body.dark .brand-subtitle {
+      color: #7dd3fc;
+    }
+
+    #themeToggle {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    #themeToggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header class="border-bottom py-3 mb-4">
+    <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between">
+      <div>
+        <p class="brand-subtitle text-uppercase mb-1" style="font-size:.8rem;">Guided Tutoring with Nick</p>
+        <h1 class="brand-title h4 mb-0">Tutoring That Makes Sense!</h1>
+      </div>
+      <div class="d-flex align-items-center mt-3 mt-md-0 ms-auto">
+        <nav class="me-3">
+         <a class="text-decoration-none me-3" href="index.html">Home</a>
+          <a class="text-decoration-none me-3" href="1-on-1.html">1-on-1 Tutoring</a>
+          <a class="text-decoration-none" href="whyus.html">Why Learn With Us</a>
+          <a class="text-decoration-none" href="starthere.html">Start Here</a>
+          <a class="text-decoration-none" href="hearfromothers.html">Hear From Others</a>
+          <a class="text-decoration-none" href="about.html">About Me</a>
+        </nav>
+        <button id="themeToggle" class="btn btn-sm" type="button" aria-label="Toggle color theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content" id="top">
+    <h1 class="section-title mb-3">Tutoring That Makes Sense!</h1>
+    <p>One-on-one support that’s clear, grounded, and judgment-free.</p>
+    <p>Over 5 years of personalized tutoring experience, helping all students K–12.</p>
+    <p>Support available for students of all ages including adults seeking personalized guidance.</p>
+
+    <h2 class="section-title" id="offer">What I Offer 💬</h2>
+    <p class="fw-semibold">Academic & Practical Learning Support</p>
+    <ul class="feature-list">
+      <li>Math, Science, History, and more</li>
+      <li>English, ESL, and Writing</li>
+      <li>Homework help, test prep, and concept review</li>
+      <li>SAT Test Preparation</li>
+      <li>Basic and Intermediate Computer Skills</li>
+      <li>Support tailored to individual learning style</li>
+    </ul>
+
+    <h2 class="section-title">Session Formats ✍️</h2>
+    <ul class="simple-list">
+      <li>📍 In-home (Torrance & nearby areas)</li>
+      <li>📚 Public spaces like libraries or cafés</li>
+      <li>💻 Online (Zoom, Google Meet, Discord, etc)</li>
+    </ul>
+
+    <h2 class="section-title" id="why-1on1">Why Learn With Me? 🔎</h2>
+    <ul class="feature-list">
+      <li>Clear explanations. No jargon or confusion</li>
+      <li>A respectful, encouraging learning space</li>
+      <li>Specialized English tutoring with expert-level breakdowns</li>
+      <li>Versatile support in any subject with strong results</li>
+    </ul>
+    <p class="fst-italic">“Whether you’re tackling essays or algebra, I’ll meet you where you are and walk through it together with patience and purpose.”</p>
+
+    <h2 class="section-title">My Style 💡</h2>
+    <ul class="simple-list">
+      <li>🧠 I take time to understand each student’s mindset because learning starts with rapport.</li>
+      <li>🗣  Strong focus on communication and expression</li>
+      <li>📘 English expertise backed by grammar, dialect, and writing structure</li>
+      <li>🔍 Multisubject support that reinforces understanding beyond rote memorization</li>
+    </ul>
+
+    <h2 class="section-title">Pricing 🏷️</h2>
+    <p>I believe tutoring should be accessible, personalized, and fair. My rates vary based on:</p>
+    <ul class="simple-list">
+      <li>Frequency – Recurring sessions vs. one-time support</li>
+      <li>Location – Travel time and distance may affect pricing</li>
+      <li>Session Format – In-person vs. virtual</li>
+    </ul>
+    <p>For detailed pricing information, please reach out directly via contact information below.</p>
+
+    <h2 class="section-title">Contact Information 📞</h2>
+    <p class="contact-line"><strong>Email :</strong> <a href="mailto:growthbyguidance@gmail.com">growthbyguidance@gmail.com</a></p>
+    <p class="contact-line"><strong>Phone :</strong> <a href="tel:3107554042">310-755-4042</a> (Text or Call)</p>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    }
+
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>

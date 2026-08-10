@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hear From Other Parents</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --surface: #ffffff;
+      --border: #e5e7eb;
+      --accent: #0d6efd;
+      --muted: #6b7280;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    body.dark {
+      --bg: #111827;
+      --text: #f9fafb;
+      --surface: #1f2937;
+      --border: #374151;
+      --accent: #60a5fa;
+      --muted: #d1d5db;
+    }
+
+    .page { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+    .section-title { font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+    .subhead { font-weight: 600; margin-bottom: .75rem; }
+    .card-custom {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .muted { color: var(--muted); }
+
+    header {
+      background: var(--surface) !important;
+      border-color: var(--border) !important;
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    .brand-subtitle {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .brand-title {
+      color: var(--text);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 1rem;
+    }
+
+    nav a:last-child {
+      margin-right: 0;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    body.dark header {
+      box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    body.dark .brand-subtitle {
+      color: #7dd3fc;
+    }
+
+    #themeToggle {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    #themeToggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header class="border-bottom py-3 mb-4">
+    <div class="container d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between">
+      <div>
+        <p class="brand-subtitle text-uppercase mb-1" style="font-size:.8rem;">Guided Tutoring with Nick</p>
+        <h1 class="brand-title h4 mb-0">Tutoring That Makes Sense!</h1>
+      </div>
+      <div class="d-flex align-items-center mt-3 mt-md-0 ms-auto">
+        <nav class="me-3">
+         <a class="text-decoration-none me-3" href="index.html">Home</a>
+          <a class="text-decoration-none me-3" href="1-on-1.html">1-on-1 Tutoring</a>
+          <a class="text-decoration-none" href="whyus.html">Why Learn With Us</a>
+          <a class="text-decoration-none" href="starthere.html">Start Here</a>
+          <a class="text-decoration-none" href="hearfromothers.html">Hear From Others</a>
+          <a class="text-decoration-none" href="about.html">About Me</a>
+        </nav>
+        <button id="themeToggle" class="btn btn-sm" type="button" aria-label="Toggle color theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="section-title">Hear From Other Parents!</h1>
+
+    <div class="card-custom">
+      <p class="subhead">Alan Hsu – ⭐ “Nick transformed my child’s study habits and confidence.”</p>
+      <p class="muted">Our family couldn’t be more delighted with the tutoring services provided by Nick. From the very first session, it was clear he brings not only expertise but heart to every lesson. I have been recommending him to all of my friends and they have been raving about how much he has improved the grades of their kids as well.</p>
+    </div>
+
+    <div class="card-custom">
+      <p class="subhead">Timothy Kim – ⭐ “Nick teaches skills that last.”</p>
+      <p class="muted">Nick has been an exceptional tutor. Not only did he help improve my child’s grades, but he also transformed their outlook on education. He instilled better study habits, time management, and scheduling skills that I know will benefit them throughout their academic journey.</p>
+    </div>
+
+    <div class="card-custom">
+      <p class="subhead">Bryan Lee – ⭐ “My son is finally excited to learn.”</p>
+      <p class="muted">My son has never been so engaged during a tutoring session. He is now excited for lessons with Nick and I couldn’t be happier that he is excited to learn!</p>
+    </div>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark');
+      toggleButton.textContent = '☀️';
+    }
+
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleButton.textContent = isDark ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
