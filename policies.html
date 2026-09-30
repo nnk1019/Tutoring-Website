@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Growth By Guidance</title>
+  <title>Page Template</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root 
@@ -36,11 +36,6 @@
 
     .content { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
     .section-title { font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-    .feature-list { list-style: none; padding-left: 0; }
-    .feature-list li::before { content: '✔'; margin-right: .75rem; color: var(--accent); }
-    .simple-list { list-style: none; padding-left: 0; }
-    .simple-list li { margin-bottom: 0.5rem; }
-    .contact-line { margin-bottom: .25rem; }
 
     header 
     {
@@ -102,20 +97,36 @@
       color: var(--accent);
     }
 
-    .footer-policy {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
+    .policy-body 
+    {
+      line-height: 1.7;
+      color: var(--text);
+      text-align: left;
     }
 
-    .footer-policy a {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
+    .policy-section 
+    {
+      margin-bottom: 1.75rem;
     }
 
-    .footer-policy a:hover {
-      text-decoration: underline;
+    .policy-section h3 
+    {
+      margin: 0 0 0.6rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .policy-section ul 
+    {
+      margin: 0.5rem 0 0 1.2rem;
+      padding-left: 0.5rem;
+      line-height: 1.8;
+    }
+
+    .policy-section li 
+    {
+      margin-bottom: 0.35rem;
     }
   </style>
 </head>
@@ -128,7 +139,7 @@
       </div>
       <div class="d-flex align-items-center mt-3 mt-md-0 ms-auto">
         <nav class="me-3">
-         <a class="text-decoration-none me-3" href="index.html">Home</a>
+          <a class="text-decoration-none me-3" href="index.html">Home</a>
           <a class="text-decoration-none me-3" href="1-on-1.html">1-on-1 Tutoring</a>
           <a class="text-decoration-none" href="whyus.html">Why Learn With Us</a>
           <a class="text-decoration-none" href="starthere.html">Start Here</a>
@@ -142,61 +153,30 @@
   </header>
 
   <main class="content" id="top">
-    <h1 class="section-title mb-3">Tutoring That Makes Sense!</h1>
-    <p>One-on-one support that’s clear, grounded, and judgment-free.</p>
-    <p>Over 5 years of personalized tutoring experience, helping all students K–12.</p>
-    <p>Support available for students of all ages including adults seeking personalized guidance.</p>
+    <h1 class="section-title mb-3">Tutoring Information and Policies</h1>
 
-    <h2 class="section-title" id="offer">What I Offer 💬</h2>
-    <p class="fw-semibold">Academic & Practical Learning Support</p>
-    <ul class="feature-list">
-      <li>Math, Science, History, and more</li>
-      <li>English, ESL, and Writing</li>
-      <li>Homework help, test prep, and concept review</li>
-      <li>SAT Test Preparation</li>
-      <li>Basic and Intermediate Computer Skills</li>
-      <li>Support tailored to individual learning style</li>
-    </ul>
+    <div class="policy-body">
+      <p>Thank you for choosing Growth By Guidance for your tutoring needs. Before beginning regular sessions, please review the following payment and scheduling policies.</p>
+      <p>These policies are intended to encourage commitment to scheduled sessions and accountability for both the student and tutor. Once a session is scheduled, that time is reserved specifically for the student, and late cancellations can prevent that time from being offered to another student. The goal is to to ensure that both the student's and tutor's time is used effectively.</p>
+      <div class="policy-section">
+        <h3>Session Length</h3>
+        <p><li>The first meeting may be scheduled as a 60-minute trial lesson to allow the student and tutor to determine whether tutoring is a good fit. After the first meeting, regular sessions must be at least 90 minutes.</p></li>
+        <p><li>Regular tutoring sessions have a 90-minute minimum. This allows enough time for a productive lesson while making the most effective use of the time reserved for both the student and tutor.</p></li>
+      </div>
 
-    <h2 class="section-title">Session Formats ✍️</h2>
-    <ul class="simple-list">
-      <li>📍 In-home (Torrance & nearby areas)</li>
-      <li>📚 Public spaces like libraries or cafés</li>
-      <li>💻 Online (Zoom, Google Meet, Discord, etc)</li>
-    </ul>
+      <div class="policy-section">
+        <h3>Payment</h3>
+        <p><li>Payment is preferred by cash, with Zelle also accepted.</p></li>
+        <p><li>For new clients, payment for the first tutoring session is collected in advance. After the first session, a regular recurring schedule can be arranged if desired.</p></li>
+        <p><li>For clients who prefer non-recurring sessions, payment is collected in advance for each scheduled session. This ensures that both the student and tutor are committed to the appointment. Because scheduling a session requires setting aside dedicated time, this helps avoid unnecessary scheduling and ensures that everyone's time is used effectively.</p></li>
+        <p><li>For clients who establish a regular recurring schedule, payment can be made at the end of each tutoring session or according to an agreed-upon schedule.</p></li>
+      </div>
 
-    <h2 class="section-title" id="why-1on1">Why Learn With Me? 🔎</h2>
-    <ul class="feature-list">
-      <li>Clear explanations. No jargon or confusion</li>
-      <li>A respectful, encouraging learning space</li>
-      <li>Specialized English tutoring with expert-level breakdowns</li>
-      <li>Versatile support in any subject with strong results</li>
-    </ul>
-    <p class="fst-italic">“Whether you’re tackling essays or algebra, I’ll meet you where you are and walk through it together with patience and purpose.”</p>
-
-    <h2 class="section-title">My Style 💡</h2>
-    <ul class="simple-list">
-      <li>🧠 I take time to understand each student’s mindset because learning starts with rapport.</li>
-      <li>🗣  Strong focus on communication and expression</li>
-      <li>📘 English expertise backed by grammar, dialect, and writing structure</li>
-      <li>🔍 Multisubject support that reinforces understanding beyond rote memorization</li>
-    </ul>
-
-    <h2 class="section-title">Pricing 🏷️</h2>
-    <p>I believe tutoring should be accessible, personalized, and fair. My rates vary based on:</p>
-    <ul class="simple-list">
-      <li>Frequency – Recurring sessions vs. one-time support</li>
-      <li>Location – Travel time and distance may affect pricing</li>
-      <li>Session Format – In-person vs. virtual</li>
-    </ul>
-    <p>For detailed pricing information, please reach out directly via contact information below.</p>
-
-    <h2 class="section-title">Contact Information 📞</h2>
-    <p class="contact-line"><strong>Email :</strong> <a href="mailto:growthbyguidance@gmail.com">growthbyguidance@gmail.com</a></p>
-    <p class="contact-line"><strong>Phone :</strong> <a href="tel:3107554042">310-755-4042</a> (Text or Call)</p>
-
-    <div class="footer-policy">
-      <p class="mb-0"><a href="policies.html">Read our tutoring policies and rates</a></p>
+      <div class="policy-section">
+        <h3>Cancellation &amp; Rescheduling</h3>
+        <p><li>For clients who establish a recurring schedule, please provide at least 24 hours' notice if you need to cancel or reschedule a tutoring session.</p></li>
+        <p><li>Cancellations made with less than 24 hours' notice, as well as missed sessions without notice, will be charged for one hour of tutoring.</p></li>
+      </div>
     </div>
   </main>
 
